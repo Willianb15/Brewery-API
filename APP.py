@@ -13,7 +13,7 @@ def save_brewery(brewery):
     cursor.execute("""
     INSERT OR REPLACE INTO Cervejaria (id, nome, tipo_de_cervejaria, cidade, país, estado)
     VALUES (?, ?, ?, ?, ?, ?)
-    """, (brewery.get("id"), brewery.get("nome"), brewery.get("tipo_de_cervejaria"), brewery.get("cidade"), brewery.get("país"), brewery.get("estado")))
+    """, (brewery.get("id"), brewery.get("name"), brewery.get("brewery_type"), brewery.get("city"), brewery.get("country"), brewery.get("state_province")))
     conn.commit()
     conn.close()
 
