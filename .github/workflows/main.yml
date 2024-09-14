@@ -34,7 +34,7 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "action@github.com"
 
-          git add API DB.db
+          git add "API DB.db"
           git commit -m "Update database: $(date '+%Y-%m-%d')"
 
       - name: Push changes
