@@ -8,7 +8,7 @@ def get_brewery():
     return data
 
 def save_brewery(brewery):
-    conn = sqlite3.connect("API DB.db")
+    conn = sqlite3.connect("API_DB.db")
     cursor = conn.cursor()
     cursor.execute("""
     INSERT OR REPLACE INTO Cervejaria (id, nome, tipo_de_cervejaria, cidade, país, estado)
